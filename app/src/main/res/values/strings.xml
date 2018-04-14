@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Extreme Tic Tac Toe</string>
+    <string name="home_single_5">Single Player 5 X 5</string>
+    <string name="home_multi_5">Multiplayer 5 x 5</string>
+    <string name="home_single_3">Single Player 3 X 3</string>
+    <string name="home_multi_3">Multiplayer 3 x 3</string>
+    <string name="home_welcome">WELCOME TO TIC TAC TOE</string>
+    <string name="reset">RESET</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="continue_Btn">Continue</string>
+    <string name="choose_your_symbol_and_name">Choose your Symbol and Name</string>
+    <string name="x_Radio_Btn">X</string>
+    <string name="o_Radio_Btn">O</string>
+    <string name="x">X</string>
+    <string name="o">O</string>
+    <string name="please_enter_your_name_s">Please enter your Name(s)</string>
+    <string name="COM_Player">COM</string>
+    <string name="_0">0</string>
+</resources>
