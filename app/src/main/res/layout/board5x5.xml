@@ -69,9 +69,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:layout_weight="1"
+                android:capitalize="words"
                 android:paddingRight="16dp"
-                android:text="@string/player_1"
-                android:textStyle="bold" />
+                android:textColor="#009688"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
 
             <TextView
                 android:id="@+id/playerNameTwo"
@@ -80,11 +82,13 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="32dp"
                 android:layout_weight="1"
+                android:capitalize="words"
                 android:gravity="end"
                 android:paddingLeft="16dp"
-                android:text="@string/player_2"
                 android:textAlignment="textEnd"
-                android:textStyle="bold" />
+                android:textColor="#009688"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
         </LinearLayout>
 
 

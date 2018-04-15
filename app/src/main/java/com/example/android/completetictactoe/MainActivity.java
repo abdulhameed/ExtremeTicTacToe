@@ -19,11 +19,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-        single3Btn = (Button) findViewById(R.id.singlePlayer);
-        multi3Btn = (Button) findViewById(R.id.multiPlayer);
-        single5Btn = (Button) findViewById(R.id.singlePlayer5);
-        multi5Btn = (Button) findViewById(R.id.multiPlayer5);
+        single3Btn = findViewById(R.id.singlePlayer);
+        multi3Btn = findViewById(R.id.multiPlayer);
+        single5Btn = findViewById(R.id.singlePlayer5);
+        multi5Btn = findViewById(R.id.multiPlayer5);
 
         single3Btn.setOnClickListener(new View.OnClickListener()
 

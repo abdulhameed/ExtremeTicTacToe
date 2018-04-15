@@ -29,26 +29,26 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
     Button currentBtn = null;
 
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, reset;
-    Button[] btnArray = new Button[] {btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9};
+    Button[] btnArray = new Button[]{btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.board);
 
-        LinearLayout playerName = (LinearLayout) findViewById(R.id.playerName) ;
+        LinearLayout playerName = findViewById(R.id.playerName);
         playerName.setVisibility(View.VISIBLE);
 
-        btn1 = (Button) findViewById(R.id.btn1);
-        btn2 = (Button) findViewById(R.id.btn2);
-        btn3 = (Button) findViewById(R.id.btn3);
-        btn4 = (Button) findViewById(R.id.btn4);
-        btn5 = (Button) findViewById(R.id.btn5);
-        btn6 = (Button) findViewById(R.id.btn6);
-        btn7 = (Button) findViewById(R.id.btn7);
-        btn8 = (Button) findViewById(R.id.btn8);
-        btn9 = (Button) findViewById(R.id.btn9);
-        reset = (Button) findViewById(R.id.reset);
+        btn1 = findViewById(R.id.btn1);
+        btn2 = findViewById(R.id.btn2);
+        btn3 = findViewById(R.id.btn3);
+        btn4 = findViewById(R.id.btn4);
+        btn5 = findViewById(R.id.btn5);
+        btn6 = findViewById(R.id.btn6);
+        btn7 = findViewById(R.id.btn7);
+        btn8 = findViewById(R.id.btn8);
+        btn9 = findViewById(R.id.btn9);
+        reset = findViewById(R.id.reset);
 
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
@@ -65,20 +65,20 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
 /* Collects and saves player names at Game start */
 
     public void savePlayerName(View view) {
-        EditText player1 = (EditText) findViewById(R.id.player1Text);
+        EditText player1 = findViewById(R.id.player1Text);
         String name1Text = player1.getText().toString();
 
-        EditText player2 = (EditText) findViewById(R.id.player2Text);
+        EditText player2 = findViewById(R.id.player2Text);
         String name2Text = player2.getText().toString();
 
-        TextView playerText1 = (TextView) findViewById(R.id.playerNameOne);
+        TextView playerText1 = findViewById(R.id.playerNameOne);
         playerText1.setText(name1Text);
 
-        TextView playerText2 = (TextView) findViewById(R.id.playerNameTwo);
+        TextView playerText2 = findViewById(R.id.playerNameTwo);
         playerText2.setText(name2Text);
 
-        LinearLayout playerName = (LinearLayout) findViewById(R.id.playerName);
-        playerName.setVisibility(view.INVISIBLE);
+        LinearLayout playerName = findViewById(R.id.playerName);
+        playerName.setVisibility(View.INVISIBLE);
     }
 
     @Override
@@ -89,16 +89,14 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
 
         Collections.addAll(buttonsList, btnArray);
 
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.btn1:
                 if (btn1.getText().toString().equals("")) {
                     if (chance == 0) {
 
                         currentBtn = btn1;
                         oPlay();
-                    }
-
-                    else {
+                    } else {
                         currentBtn = btn1;
                         xPlay();
 
@@ -111,9 +109,7 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
                     if (chance == 0) {
                         currentBtn = btn2;
                         oPlay();
-                    }
-
-                    else {
+                    } else {
                         currentBtn = btn2;
                         xPlay();
                     }
@@ -121,15 +117,12 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn3:
-                if (btn3.getText().toString().equals("")){
-                    if (chance==0){
+                if (btn3.getText().toString().equals("")) {
+                    if (chance == 0) {
                         currentBtn = btn3;
                         oPlay();
 
-                    }
-
-                    else
-                        {
+                    } else {
                         currentBtn = btn3;
                         xPlay();
                     }
@@ -137,15 +130,13 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn4:
-                if (btn4.getText().toString().equals("")){
-                    if (chance==0){
+                if (btn4.getText().toString().equals("")) {
+                    if (chance == 0) {
 
                         currentBtn = btn4;
                         oPlay();
 
-                    }
-
-                    else {
+                    } else {
                         currentBtn = btn4;
                         xPlay();
 
@@ -154,14 +145,12 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn5:
-                if (btn5.getText().toString().equals("")){
-                    if (chance==0){
+                if (btn5.getText().toString().equals("")) {
+                    if (chance == 0) {
                         currentBtn = btn5;
                         oPlay();
 
-                    }
-
-                    else {
+                    } else {
                         currentBtn = btn5;
                         xPlay();
 
@@ -170,15 +159,13 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn6:
-                if (btn6.getText().toString().equals("")){
-                    if (chance==0){
+                if (btn6.getText().toString().equals("")) {
+                    if (chance == 0) {
 
                         currentBtn = btn6;
                         oPlay();
 
-                    }
-
-                    else {
+                    } else {
                         currentBtn = btn6;
                         xPlay();
 
@@ -188,14 +175,12 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn7:
-                if (btn7.getText().toString().equals("")){
-                    if (chance==0){
+                if (btn7.getText().toString().equals("")) {
+                    if (chance == 0) {
                         currentBtn = btn7;
                         oPlay();
 
-                    }
-
-                    else {
+                    } else {
                         currentBtn = btn7;
                         xPlay();
 
@@ -204,13 +189,11 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn8:
-                if (btn8.getText().toString().equals("")){
-                    if (chance==0){
+                if (btn8.getText().toString().equals("")) {
+                    if (chance == 0) {
                         currentBtn = btn8;
                         oPlay();
-                    }
-
-                    else {
+                    } else {
                         currentBtn = btn8;
                         xPlay();
 
@@ -219,13 +202,11 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn9:
-                if (btn9.getText().toString().equals("")){
-                    if (chance==0){
+                if (btn9.getText().toString().equals("")) {
+                    if (chance == 0) {
                         currentBtn = btn9;
                         oPlay();
-                    }
-
-                    else {
+                    } else {
                         currentBtn = btn9;
                         xPlay();
 
@@ -240,7 +221,7 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
 
 /* Routine for Player O's Turn*/
 
-    public Button oPlay(){
+    public Button oPlay() {
         currentBtn.setText("O");
         currentBtn.setTextColor(Color.parseColor("#FF5252"));
         currentBtn.setEnabled(false);
@@ -253,7 +234,7 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
 
         /* Routine for Player X's Turn*/
 
-    public Button xPlay(){
+    public Button xPlay() {
         currentBtn.setText("X");
         currentBtn.setTextColor(Color.parseColor("#1976D2"));
         currentBtn.setEnabled(false);
@@ -291,18 +272,18 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
 
 /*Display Game score for player 'O' */
 
-    public void displayScoreO(){
+    public void displayScoreO() {
 
-        TextView oTextView = (TextView) findViewById(R.id.player2ScoreText);
-        oTextView.setText(""+oScore);
+        TextView oTextView = findViewById(R.id.player2ScoreText);
+        oTextView.setText("" + oScore);
     }
 
     /*Display Game score for player 'X' */
 
-    public void displayScoreX(){
+    public void displayScoreX() {
 
-        TextView xTextView = (TextView) findViewById(R.id.player1ScoreText);
-        xTextView.setText(""+xScore);
+        TextView xTextView = findViewById(R.id.player1ScoreText);
+        xTextView.setText("" + xScore);
     }
 
     /*Checks for a game WIN or TIE */
@@ -314,99 +295,82 @@ public class multiPlayer3 extends AppCompatActivity implements View.OnClickListe
             xScore = xScore + 1;
             displayScoreX();
             reset();
-        }
-        else if (btn4.getText().toString().equals("X") && btn5.getText().toString().equals("X") && btn6.getText().toString().equals("X")){
+        } else if (btn4.getText().toString().equals("X") && btn5.getText().toString().equals("X") && btn6.getText().toString().equals("X")) {
             Toast.makeText(this, "Player X WINS!", Toast.LENGTH_SHORT).show();
             xScore = xScore + 1;
             displayScoreX();
             reset();
-        }
-        else if (btn7.getText().toString().equals("X") && btn8.getText().toString().equals("X") && btn9.getText().toString().equals("X")){
+        } else if (btn7.getText().toString().equals("X") && btn8.getText().toString().equals("X") && btn9.getText().toString().equals("X")) {
             Toast.makeText(this, "Player X WINS!", Toast.LENGTH_SHORT).show();
             xScore = xScore + 1;
             displayScoreX();
             reset();
-        }
-        else if (btn1.getText().toString().equals("O") && btn2.getText().toString().equals("O") && btn3.getText().toString().equals("O")) {
+        } else if (btn1.getText().toString().equals("O") && btn2.getText().toString().equals("O") && btn3.getText().toString().equals("O")) {
             Toast.makeText(this, "Player O WINS!", Toast.LENGTH_SHORT).show();
             oScore = oScore + 1;
             displayScoreO();
             reset();
-        }
-        else if (btn4.getText().toString().equals("O") && btn5.getText().toString().equals("O") && btn6.getText().toString().equals("O")){
+        } else if (btn4.getText().toString().equals("O") && btn5.getText().toString().equals("O") && btn6.getText().toString().equals("O")) {
             Toast.makeText(this, "Player O WINS!", Toast.LENGTH_SHORT).show();
             oScore = oScore + 1;
             displayScoreO();
             reset();
-        }
-        else if (btn7.getText().toString().equals("O") && btn8.getText().toString().equals("O") && btn9.getText().toString().equals("O")){
+        } else if (btn7.getText().toString().equals("O") && btn8.getText().toString().equals("O") && btn9.getText().toString().equals("O")) {
             Toast.makeText(this, "Player O WINS!", Toast.LENGTH_SHORT).show();
             oScore = oScore + 1;
             displayScoreO();
             reset();
-        }
-
-        else if (btn1.getText().toString().equals("X") && btn4.getText().toString().equals("X") && btn7.getText().toString().equals("X")) {
+        } else if (btn1.getText().toString().equals("X") && btn4.getText().toString().equals("X") && btn7.getText().toString().equals("X")) {
             Toast.makeText(this, "Player X WINS!", Toast.LENGTH_SHORT).show();
             xScore = xScore + 1;
             displayScoreX();
             reset();
-        }
-        else if (btn2.getText().toString().equals("X") && btn5.getText().toString().equals("X") && btn8.getText().toString().equals("X")){
+        } else if (btn2.getText().toString().equals("X") && btn5.getText().toString().equals("X") && btn8.getText().toString().equals("X")) {
             Toast.makeText(this, "Player X WINS!", Toast.LENGTH_SHORT).show();
             xScore = xScore + 1;
             displayScoreX();
             reset();
-        }
-        else if (btn3.getText().toString().equals("X") && btn6.getText().toString().equals("X") && btn9.getText().toString().equals("X")){
+        } else if (btn3.getText().toString().equals("X") && btn6.getText().toString().equals("X") && btn9.getText().toString().equals("X")) {
             Toast.makeText(this, "Player X WINS!", Toast.LENGTH_SHORT).show();
             xScore = xScore + 1;
             displayScoreX();
             reset();
-        }
-        else if (btn1.getText().toString().equals("O") && btn4.getText().toString().equals("O") && btn7.getText().toString().equals("O")) {
+        } else if (btn1.getText().toString().equals("O") && btn4.getText().toString().equals("O") && btn7.getText().toString().equals("O")) {
             Toast.makeText(this, "Player O WINS!", Toast.LENGTH_SHORT).show();
             oScore = oScore + 1;
             displayScoreO();
             reset();
-        }
-        else if (btn2.getText().toString().equals("O") && btn5.getText().toString().equals("O") && btn8.getText().toString().equals("O")){
+        } else if (btn2.getText().toString().equals("O") && btn5.getText().toString().equals("O") && btn8.getText().toString().equals("O")) {
             Toast.makeText(this, "Player O WINS!", Toast.LENGTH_SHORT).show();
             oScore = oScore + 1;
             displayScoreO();
             reset();
-        }
-        else if (btn3.getText().toString().equals("O") && btn6.getText().toString().equals("O") && btn9.getText().toString().equals("O")){
+        } else if (btn3.getText().toString().equals("O") && btn6.getText().toString().equals("O") && btn9.getText().toString().equals("O")) {
             Toast.makeText(this, "Player O WINS!", Toast.LENGTH_SHORT).show();
             oScore = oScore + 1;
             displayScoreO();
             reset();
-        }
-        else if (btn1.getText().toString().equals("X") && btn5.getText().toString().equals("X") && btn9.getText().toString().equals("X")){
+        } else if (btn1.getText().toString().equals("X") && btn5.getText().toString().equals("X") && btn9.getText().toString().equals("X")) {
             Toast.makeText(this, "Player X WINS!", Toast.LENGTH_SHORT).show();
             xScore = xScore + 1;
             displayScoreX();
             reset();
-        }
-        else if (btn3.getText().toString().equals("X") && btn5.getText().toString().equals("X") && btn7.getText().toString().equals("X")){
+        } else if (btn3.getText().toString().equals("X") && btn5.getText().toString().equals("X") && btn7.getText().toString().equals("X")) {
             Toast.makeText(this, "Player X WINS!", Toast.LENGTH_SHORT).show();
             xScore = xScore + 1;
             displayScoreX();
             reset();
-        }
-        else if (btn1.getText().toString().equals("O") && btn5.getText().toString().equals("O") && btn9.getText().toString().equals("O")) {
+        } else if (btn1.getText().toString().equals("O") && btn5.getText().toString().equals("O") && btn9.getText().toString().equals("O")) {
             Toast.makeText(this, "Player O WINS!", Toast.LENGTH_SHORT).show();
             oScore = oScore + 1;
             displayScoreO();
             reset();
-        }
-        else if (btn3.getText().toString().equals("O") && btn5.getText().toString().equals("O") && btn7.getText().toString().equals("O")){
+        } else if (btn3.getText().toString().equals("O") && btn5.getText().toString().equals("O") && btn7.getText().toString().equals("O")) {
             Toast.makeText(this, "Player O WINS!", Toast.LENGTH_SHORT).show();
             oScore = oScore + 1;
             displayScoreO();
             reset();
-        }
-        else if (playCount == 9 ){
+        } else if (playCount == 9) {
             Toast.makeText(this, "Game is a TIE", Toast.LENGTH_SHORT).show();
             reset();
 
